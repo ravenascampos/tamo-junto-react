@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import MediaQuery from "react-responsive";
+import { useMediaQuery } from "react-responsive";
 import { CardThemes } from "../CardThemes";
 import { SwiperWrapper } from "../SwiperPurpose/swiperPurpose.style";
 import { Container } from "./swiperThemes.style";
@@ -12,10 +12,18 @@ import { Card } from "../CardThemes/cardThemes.style";
 
 export function SwiperThemes() {
   const { themesList } = useContext(AppContext);
+
+  const isMobileOrTablet = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
+  const isDesktop = useMediaQuery({
+    query: "(min-width: 769px)",
+  });
+
   return (
     <Container id="community">
       <h2>O que rola na nossa comunidade:</h2>
-      <MediaQuery maxWidth={1023}>
+      {isMobileOrTablet && (
         <SwiperWrapper>
           <Swiper
             slidesPerView={1}
@@ -47,10 +55,8 @@ export function SwiperThemes() {
             ))}
           </Swiper>
         </SwiperWrapper>
-      </MediaQuery>
-      <MediaQuery minWidth={1024}>
-        <CardThemes />
-      </MediaQuery>
+      )}
+      {isDesktop && <CardThemes />}
     </Container>
   );
 }
