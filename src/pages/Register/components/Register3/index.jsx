@@ -1,7 +1,7 @@
 import { Content, Title } from "../../register.style";
-import FormStep3 from "../FormStep3";
+import { FormStep3 } from "../FormStep3";
 
-export default function Register3() {
+export function Register3() {
   return (
     <Content>
       <Title>

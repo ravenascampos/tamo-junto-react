@@ -8,7 +8,7 @@ import { SwiperPurpose } from "./components/SwiperPurpose";
 import { SwiperTestimonial } from "./components/SwiperTestimonial";
 import { SwiperThemes } from "./components/SwiperThemes";
 
-export default function Home() {
+export function Home() {
   return (
     <>
       <HomeDescription />

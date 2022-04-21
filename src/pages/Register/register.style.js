@@ -1,20 +1,21 @@
 import styled from "styled-components";
 import { theme } from "../../styles/theme";
 import { darken } from "polished";
+import registerMobile from "../../assets/images/register-bg-mobile.png";
+import registerDesktop from "../../assets/images/register-bg.png";
 
 export const Container = styled.main`
-  background-image: url(${"/images/register-bg-mobile.png"});
+  background-image: url(${registerMobile});
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
-  //background: ${theme.colors.neutral.white};
-  background-position: right;
+  background-size: auto 100vh;
+  background-position: top right;
   align-items: center;
   height: auto;
-  padding-top: 5rem;
+  padding-bottom: 2rem;
 
   @media (min-width: 767px) {
-    background-image: url(${"/images/register-bg.png"});
+    background-image: url(${registerDesktop});
   }
 `;
 
@@ -163,7 +164,6 @@ export const Title = styled.h2`
   line-height: ${theme.typography.body.mediumText.lineHeight};
   color: ${theme.colors.primary.p800};
   margin-bottom: 1.5rem;
-  margin-top: 2.5rem;
 `;
 
 export const Content = styled.section`

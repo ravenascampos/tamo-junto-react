@@ -1,5 +1,11 @@
+import { Container } from "../Register/register.style";
 import React from "react";
+import { MultiStep } from "./components/MultiStep";
 
-export default function Register() {
-  return <div>Register</div>;
+export function Register() {
+  return (
+    <Container>
+      <MultiStep />
+    </Container>
+  );
 }

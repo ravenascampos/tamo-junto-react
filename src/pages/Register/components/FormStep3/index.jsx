@@ -29,7 +29,7 @@ const schema = yup
   })
   .required();
 
-export default function FormStep3() {
+export function FormStep3() {
   const {
     register,
     handleSubmit,

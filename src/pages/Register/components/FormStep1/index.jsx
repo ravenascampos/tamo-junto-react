@@ -2,7 +2,6 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-
 import { FiChevronRight } from "react-icons/fi";
 import { Form, Input, Label, Error, Button, Text } from "../../register.style";
 
@@ -32,7 +31,7 @@ const schema = yup
   })
   .required();
 
-export default function FormStep1({ activeStep, steps, handleNextStep }) {
+export function FormStep1({ activeStep, steps, handleNext }) {
   const {
     register,
     handleSubmit,
@@ -66,9 +65,9 @@ export default function FormStep1({ activeStep, steps, handleNextStep }) {
         />
         <Error>{errors.passwordConfirmation?.message}</Error>
         <Text>Todos os campos são obrigatórios</Text>
-        <Button onClick={handleNextStep}>
-          {activeStep === steps.length ? "Finish" : "CONTINUAR"}
+        <Button type="submit" onClick={handleNext}>
           <span>
+            {activeStep === steps.length ? "Finish" : "Next"}
             <FiChevronRight />
           </span>
         </Button>

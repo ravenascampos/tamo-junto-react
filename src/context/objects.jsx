@@ -1,18 +1,16 @@
-import talk from "../assets/icons/talk-icon.svg";
-
 export const cards = [
   {
-    img: { talk },
+    img: "https://raw.githubusercontent.com/ravenascampos/tamo-junto-react/12e1d1c0621b387aa0462cca9d2497ccdc584d60/src/assets/icons/talk-icon.svg",
     title: "Conversar",
     text: "Tire dúvidas e troque informações sobre estratégias de negócio, administração, marketing, gestão financeira e outros tópicos importantes. Descubra os melhores fornecedores e aprenda com a experiência compartilhada dentro do app.",
   },
   {
-    img: "../assets/icons/together-icon.svg",
+    img: "https://raw.githubusercontent.com/ravenascampos/tamo-junto-react/12e1d1c0621b387aa0462cca9d2497ccdc584d60/src/assets/icons/together-icon.svg",
     title: "Se juntar",
     text: "Crie grupos e negocie preços mais baixos ao comprar mercadorias em grandes quantidades, ou organize eventos especiais na cidade para atrair um público diferenciado. Faça parcerias ou simplesmente novas amizades com pessoas que têm os mesmos objetivos que você.",
   },
   {
-    img: "../assets/icons/announce-icon.svg",
+    img: "https://raw.githubusercontent.com/ravenascampos/tamo-junto-react/12e1d1c0621b387aa0462cca9d2497ccdc584d60/src/assets/icons/announce-icon.svg",
     title: "Anunciar",
     text: "Venda ou alugue equipamentos em desuso pra quem precisa. Caso você tenha uma estrutura que só funciona em um período do dia, você pode sublocar seu espaço no contraturno e aumentar a lucratividade do local.",
   },
@@ -20,47 +18,47 @@ export const cards = [
 
 export const themes = [
   {
-    img: "../assets/images/management.png",
+    img: "https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/management.png?raw=true",
     title: "Administração",
     text: "Converse sobre modelos de negócio, planos de expansão ou problemas administrativos que esteja enfrentando e precise de ajuda.",
   },
   {
-    img: "../assets/images/finance.png",
+    img: "https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/finance.png?raw=true",
     title: "Finanças",
     text: "Converse sobre empréstimos, revenda, lucros e prejuízos... Descubra como a comunidade pode te ajudar a passar pelos momentos difíceis",
   },
   {
-    img: "../assets/images/marketing.png",
+    img: "https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/marketing.png?raw=true",
     title: "Marketing",
     text: "Quem não é visto, não é lembrado. Troque informações sobre estratégias de divulgação que funcionaram (ou não) e podem ajudar toda a comunidade.",
   },
   {
-    img: "../assets/images/contributors.png",
+    img: "https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/contributors.png?raw=true",
     title: "Colaboradores",
     text: "Seja pra pedir recomendação de novos colaboradores, ou pra compartilhar os perrengues, esse é o seu espaço pra falar sobre lidar com colaboradores.",
   },
   {
-    img: "../assets/images/innovation.png",
+    img: "https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/innovation.png?raw=true",
     title: "Inovação",
     text: "Teve uma ideia revolucionária e quer testar se funciona? Aqui é seu espaço pra trocar ideias e quem sabe ouvir de quem já tentou se deu (ou não) certo.",
   },
   {
-    img: "../assets/images/providers.png",
+    img: "https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/providers.png?raw=true",
     title: "Fornecedores",
     text: "Crie grupos pra fazer compras coletivas nos fornecedores, ou então peça recomendação de fornecedores de confiança pro seu negócio.",
   },
   {
-    img: "../assets/images/happy-hour.png",
+    img: "https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/happy-hour.png?raw=true",
     title: "Happy Hour",
     text: "Pra socializar e conversar. Aqui você pode combinar encontros para firmar parcerias e discutir o que já rola aqui na comunidade.",
   },
   {
-    img: "../assets/images/news.png",
+    img: "https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/news.png?raw=true",
     title: "Notícias",
     text: "Compartilhe notícias locais ou discuta sobre novas legislações que podem impactar direta ou indiretamente a comunidade empreendedora.",
   },
   {
-    img: "../assets/images/studies.png",
+    img: "https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/studies.png?raw=true",
     title: "Estudos",
     text: "Espaço pra conversar sobre mentorias, consultorias, cursos ou mesmo artigos sobre empreendedorismo que podem agregar pra comunidade.",
   },
@@ -68,19 +66,19 @@ export const themes = [
 
 export const testimonial = [
   {
-    img: "../assets/images/leonardo-testimonial.png",
+    img: "https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/leonardo-testimonial.png?raw=true",
     name: "Leonardo",
     title: "Bar da Granja",
     text: "Com a tamojunto eu me juntei com outros bares pra comprar cerveja e destilados em maior quantidade e conseguimos preços bem melhores com o nosso fornecedor",
   },
   {
-    img: "../assets/images/eduardo-testimonial.png",
+    img: "https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/eduardo-testimonial.png?raw=true",
     name: "Eduardo",
     title: "Bistrô Junteau",
     text: "Com ajuda da comunidade tamojunto, eu consegui muito apoio e informações valiosíssimas pra abrir meu restaurante na cidade. Já comecei com o pé direito e cheio de amigos do ramo",
   },
   {
-    img: "../assets/images/michele-testimonial.png",
+    img: "https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/michele-testimonial.png?raw=true",
     name: "Michele",
     title: "Delícias Doceria",
     text: "A comunidade foi essencial para que eu conseguisse alugar uma cozinha no contraturno de um restaurante pra fazer meus doces, além de arrumar parceiros pra revender os meus produtos.",

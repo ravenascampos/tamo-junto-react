@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Container, Grid } from "./downloadNow.style";
+import playStore from "../../../../assets/icons/play-store.svg";
+import appleStore from "../../../../assets/icons/apple-store.svg";
 
 export function DownloadNow() {
   return (
@@ -13,16 +15,12 @@ export function DownloadNow() {
       </h5>
       <Grid>
         <Link to="#">
-          <img
-            className="play-store"
-            src="/icons/play-store.svg"
-            alt="botão play store"
-          />
+          <img className="play-store" src={playStore} alt="botão play store" />
         </Link>
         <Link to="#">
           <img
             className="apple-store"
-            src="/icons/apple-store.svg"
+            src={appleStore}
             alt="botão apple store"
           />
         </Link>

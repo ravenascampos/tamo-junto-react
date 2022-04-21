@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Stepper, Step, StepLabel, Typography, Button } from "@mui/material";
-import Register1 from "../Register1";
-import Register2 from "../Register2";
-import Register3 from "../Register3";
+import { Stepper, Step, StepLabel, Button } from "@mui/material";
+import { Register1 } from "../Register1";
+import { Register2 } from "../Register2";
+import { Register3 } from "../Register3";
+import { Container } from "./multiStep.styled";
 
-export default function MultiStep() {
+export function MultiStep() {
   const [activeStep, setActiveStep] = useState(0);
 
   function getSteps() {
@@ -20,7 +21,13 @@ export default function MultiStep() {
   function getStepsContent(stepIndex) {
     switch (stepIndex) {
       case 0:
-        return <Register1 />;
+        return (
+          <Register1
+            handleNext={handleNextStep}
+            activeStep={activeStep}
+            steps={steps}
+          />
+        );
       case 1:
         return <Register2 />;
       case 2:
@@ -31,7 +38,7 @@ export default function MultiStep() {
   }
 
   return (
-    <>
+    <Container>
       <Stepper activeStep={activeStep}>
         {steps.map((label) => (
           <Step key={label}>
@@ -43,14 +50,9 @@ export default function MultiStep() {
         {activeStep === steps.length ? (
           "Completed"
         ) : (
-          <>
-            {getStepsContent(activeStep)}
-            <Button onClick={handleNextStep}>
-              {activeStep === steps.length ? "Finish" : "Next"}
-            </Button>
-          </>
+          <>{getStepsContent(activeStep)}</>
         )}
       </>
-    </>
+    </Container>
   );
 }

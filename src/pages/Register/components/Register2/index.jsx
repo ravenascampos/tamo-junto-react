@@ -1,8 +1,8 @@
 import React from "react";
 import { Content, Title } from "../../register.style";
-import FormStep2 from "../FormStep2";
+import { FormStep2 } from "../FormStep2";
 
-export default function Register2() {
+export function Register2() {
   return (
     <Content>
       <Title>
