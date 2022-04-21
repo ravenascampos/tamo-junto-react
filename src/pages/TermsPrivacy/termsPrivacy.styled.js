@@ -7,6 +7,10 @@ export const Container = styled.section`
   @media (min-width: 1023px) {
     padding: 8rem 12rem 2rem;
   }
+
+  @media (min-width: 2559px) {
+    padding: 10rem 30rem 2rem;
+  }
 `;
 
 export const Title = styled.h1`
