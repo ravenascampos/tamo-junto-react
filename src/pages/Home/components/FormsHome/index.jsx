@@ -30,7 +30,21 @@ export function FormsHome() {
   const onSubmit = (data) => console.log(data);
   return (
     <>
-      <Form onSubmit={handleSubmit(onSubmit)}>
+      <Form
+        action="https://formsubmit.co/tamojunto.work@gmail.com"
+        method="POST"
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        <input
+          type="hidden"
+          name="_next"
+          value="http://localhost:3001/send-email-success"
+        />
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value="Sua mensagem foi recebida com sucesso! Analisaremos sua solicitação e logo entraremos em contato! Obrigada pela preferência! Pó Pô Pó Cafeteria Gourmet"
+        />
         <Label htmlFor="name">Nome</Label>
         <Input id="name" type="text" {...register("name")} />
         <Error>{errors.name?.message}</Error>

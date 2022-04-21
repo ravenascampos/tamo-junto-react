@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { cards, themes, testimonial, faq } from "./objects";
+import { cards, themes, testimonial, faq } from "../services/objects";
 
 export const AppContext = createContext();
 

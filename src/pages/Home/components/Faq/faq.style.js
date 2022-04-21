@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { theme } from "../../../../styles/theme";
+import faqBG from "../../../../assets/images/faq-bg-mobile.png";
 
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(${"/images/faq-bg-mobile.png"});
+  background-image: url(${faqBG});
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

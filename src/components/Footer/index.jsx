@@ -9,13 +9,8 @@ export function Footer() {
       <Wrapper>
         <Nav>
           <li>
-            <Link to="#">
-              <a>Política de Privacidade</a>
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <a>Termo de Uso</a>
+            <Link to="/terms">
+              <a>Termo de Uso e Privacidade</a>
             </Link>
           </li>
           <li>
