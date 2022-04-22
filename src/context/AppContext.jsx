@@ -4,7 +4,8 @@ import {
 	themes,
 	testimonial,
 	faq,
-	businessType,
+	businessType, 
+	members
 } from "../services/helpers";
 
 export const AppContext = createContext();
@@ -15,6 +16,7 @@ export function AppProvider({ children }) {
 	const [testimonialList, setTestimonialList] = useState([]);
 	const [faqList, setFaqList] = useState([]);
 	const [businessList, setBusinessList] = useState([]);
+	const [membersList, setMembersList] = useState([])
 
 	async function loadCards() {
 		try {
@@ -56,12 +58,21 @@ export function AppProvider({ children }) {
 		}
 	}
 
+	async function loadMembers() {
+		try {
+			setMembersList(members);
+		} catch (error) {
+			setMembersList(null);
+		}
+	}
+
 	useEffect(() => {
 		loadCards();
 		loadThemes();
 		loadTestimonial();
 		loadFaq();
 		loadBusiness();
+		loadMembers();
 	}, []);
 
 	return (
@@ -72,6 +83,7 @@ export function AppProvider({ children }) {
 				testimonialList,
 				faqList,
 				businessList,
+				membersList
 			}}
 		>
 			{children}
