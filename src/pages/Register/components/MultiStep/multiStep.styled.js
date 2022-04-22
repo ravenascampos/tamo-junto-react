@@ -3,11 +3,16 @@ import { theme } from "../../../../styles/theme";
 
 export const Container = styled.div`
   padding-top: 8rem;
+  max-width: 1024px;
+  margin: 0 auto;
 
   .MuiStepper-root.MuiStepper-horizontal {
     padding: 0 2rem;
-    @media (min-width: 1023px) {
-      padding: 0 18rem;
+    max-width: 1024px;
+    margin: 0 auto;
+
+    @media (min-width: 767px) {
+      padding: 0 10rem;
     }
   }
 
@@ -48,7 +53,6 @@ export const Container = styled.div`
     .MuiStepConnector-line.MuiStepConnector-lineHorizontal {
       border-top-width: 0.5rem;
       border-color: ${theme.colors.neutral.n60};
-      height: -13rem;
     }
   }
 
@@ -56,7 +60,13 @@ export const Container = styled.div`
     .MuiStepConnector-line.MuiStepConnector-lineHorizontal {
       border-top-width: 0.5rem;
       border-color: ${theme.colors.primary.p500};
-      height: -3rem;
+    }
+  }
+
+  .MuiStepConnector-root.MuiStepConnector-horizontal.Mui-completed {
+    .MuiStepConnector-line.MuiStepConnector-lineHorizontal {
+      border-top-width: 0.5rem;
+      border-color: ${theme.colors.primary.p500};
     }
   }
 `;

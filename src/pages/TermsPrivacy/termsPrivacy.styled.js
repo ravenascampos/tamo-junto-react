@@ -2,15 +2,9 @@ import styled from "styled-components";
 import { theme } from "../../styles/theme";
 
 export const Container = styled.section`
-  padding: 6rem 2rem 2rem;
-
-  @media (min-width: 1023px) {
-    padding: 8rem 12rem 2rem;
-  }
-
-  @media (min-width: 2559px) {
-    padding: 10rem 30rem 2rem;
-  }
+  padding: 8rem 3rem 2rem;
+  max-width: 1024px;
+  margin: 0 auto;
 `;
 
 export const Title = styled.h1`

@@ -4,17 +4,17 @@ import { Container, Title, Wrapper, Content } from "./contactSection.style";
 import contact from "../../../../assets/images/contact.png";
 
 export function ContactSection() {
-  return (
-    <Container>
-      <Title>
+	return (
+		<Container>
+			<Title>
         Tem alguma dúvida ou quer falar com a gente? Então envie uma mensagem 😉
-      </Title>
-      <Content>
-        <FormsHome />
-      </Content>
-      <Wrapper>
-        <img src={contact} />
-      </Wrapper>
-    </Container>
-  );
+			</Title>
+			<Content>
+				<FormsHome />
+			</Content>
+			<Wrapper>
+				<img src={contact} />
+			</Wrapper>
+		</Container>
+	);
 }

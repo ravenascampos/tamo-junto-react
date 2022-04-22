@@ -22,6 +22,8 @@ export const Container = styled.main`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
 `;
 
 export const Label = styled.label`

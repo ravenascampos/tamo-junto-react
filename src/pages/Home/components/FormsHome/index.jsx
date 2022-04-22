@@ -5,63 +5,49 @@ import * as yup from "yup";
 import { Form, Input, Label, Textarea, Button, Error } from "./formsHome.style";
 
 const schema = yup.object({
-  name: yup
-    .string()
-    .min(3, "O campo deve ter, no mínimo, 3 caracteres")
-    .required("O campo é obrigatório"),
-  email: yup
-    .string()
-    .email("E-mail inválido")
-    .required("O campo é obrigatório"),
-  message: yup
-    .string()
-    .min(5, "O campo deve ter, no mínimo, 5 caracteres")
-    .required("O campo é obrigatório"),
+	name: yup
+		.string()
+		.min(3, "O campo deve ter, no mínimo, 3 caracteres")
+		.required("O campo é obrigatório"),
+	email: yup
+		.string()
+		.email("E-mail inválido")
+		.required("O campo é obrigatório"),
+	message: yup
+		.string()
+		.min(5, "O campo deve ter, no mínimo, 5 caracteres")
+		.required("O campo é obrigatório"),
 });
 
 export function FormsHome() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({
-    resolver: yupResolver(schema),
-  });
-  const onSubmit = (data) => console.log(data);
-  return (
-    <>
-      <Form
-        action="https://formsubmit.co/tamojunto.work@gmail.com"
-        method="POST"
-        onSubmit={handleSubmit(onSubmit)}
-      >
-        <input
-          type="hidden"
-          name="_next"
-          value="http://localhost:3001/send-email-success"
-        />
-        <input
-          type="hidden"
-          name="_autoresponse"
-          value="Sua mensagem foi recebida com sucesso! Analisaremos sua solicitação e logo entraremos em contato! Obrigada pela preferência! Pó Pô Pó Cafeteria Gourmet"
-        />
-        <Label htmlFor="name">Nome</Label>
-        <Input id="name" type="text" {...register("name")} />
-        <Error>{errors.name?.message}</Error>
-        <Label htmlFor="email">Email</Label>
-        <Input id="email" type="email" {...register("email")} />
-        <Error>{errors.email?.message}</Error>
-        <div>
-          <Label htmlFor="phone">Telefone</Label>
-          <span>Opcional</span>
-        </div>
-        <Input id="phone" type="number" {...register("phone")} />
-        <Error>{errors.phone?.message}</Error>
-        <Label htmlFor="message">Mensagem</Label>
-        <Textarea id="message" type="text" {...register("message")} />
-        <Error>{errors.message?.message}</Error>
-        <Button type="submit">ENVIAR</Button>
-      </Form>
-    </>
-  );
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm({
+		resolver: yupResolver(schema),
+	});
+	const onSubmit = (data) => console.log(data);
+	return (
+		<>
+			<Form onSubmit={handleSubmit(onSubmit)}>
+				<Label htmlFor="name">Nome</Label>
+				<Input id="name" type="text" {...register("name")} />
+				<Error>{errors.name?.message}</Error>
+				<Label htmlFor="email">Email</Label>
+				<Input id="email" type="email" {...register("email")} />
+				<Error>{errors.email?.message}</Error>
+				<div>
+					<Label htmlFor="phone">Telefone</Label>
+					<span>Opcional</span>
+				</div>
+				<Input id="phone" type="number" {...register("phone")} />
+				<Error>{errors.phone?.message}</Error>
+				<Label htmlFor="message">Mensagem</Label>
+				<Textarea id="message" type="text" {...register("message")} />
+				<Error>{errors.message?.message}</Error>
+				<Button type="submit">ENVIAR</Button>
+			</Form>
+		</>
+	);
 }
