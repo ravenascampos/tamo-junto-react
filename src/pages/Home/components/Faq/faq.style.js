@@ -63,7 +63,7 @@ export const Title = styled.h3`
 
 export const Accordion = styled.div`
   order: 2;
-  margin-bottom: 27.5rem;
+  margin-bottom: 10rem;
 
   @media (min-width: 1023px) {
     width: 35.812rem;

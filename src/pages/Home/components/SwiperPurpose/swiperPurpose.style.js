@@ -2,8 +2,10 @@ import styled from "styled-components";
 import { theme } from "../../../../styles/theme";
 
 export const Container = styled.div`
-  padding: 10rem 0;
+  padding: 4rem 0;
   margin-left: 1rem;
+  max-width: 1440px;
+  margin: auto;
 
   h2 {
     font-weight: 700;
@@ -16,9 +18,7 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1439px) {
-    padding: 12.375rem 0;
-    margin-right: 7rem;
-    margin-left: 7rem;
+    padding: 4rem 0;
 
     h2 {
       font-size: ${theme.typography.heading.heading4.fontSize};

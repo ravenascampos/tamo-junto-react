@@ -8,6 +8,7 @@ export const Container = styled.section`
   align-items: center;
   padding: 5rem 0;
   margin-left: 1.5rem;
+  max-width: 1440px;
 
   img {
     margin: 5.5rem auto 6.25rem auto;
@@ -33,6 +34,7 @@ export const Container = styled.section`
   @media (min-width: 767px) {
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
 
     img {
       order: 2;
@@ -48,6 +50,8 @@ export const Container = styled.section`
   @media (min-width: 1023px) {
     img {
       margin-right: 4rem;
+      width: 27rem;
+      height: 25rem;
     }
     .content {
       margin-left: 4rem;

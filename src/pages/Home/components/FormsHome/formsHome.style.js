@@ -20,6 +20,10 @@ export const Form = styled.form`
       margin-bottom: 0.5rem;
     }
   }
+
+  @media (min-width: 2559px) {
+    margin-right: 10rem;
+  }
 `;
 
 export const Label = styled.label`

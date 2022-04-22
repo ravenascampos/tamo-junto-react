@@ -16,15 +16,10 @@ export const Container = styled.section`
     color: ${theme.colors.neutral.white};
     margin-left: 1rem;
     margin-right: 1rem;
-
-    @media (min-width: 1023px) {
-      margin-left: 4rem;
-      margin-right: 5rem;
-    }
+    max-width: 1440px;
+    margin: 0 auto;
 
     @media (min-width: 1439px) {
-      margin-left: 7rem;
-      margin-right: 7rem;
       font-size: ${theme.typography.heading.heading3.fontSize};
       line-height: ${theme.typography.heading.heading3.lineHeight};
     }

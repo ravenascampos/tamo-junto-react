@@ -10,7 +10,11 @@ export const Container = styled.section`
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  @media (min-width: 2559px) {
+    justify-content: center;
   }
 `;
 
@@ -48,7 +52,7 @@ export const Content = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
 
   img {
     width: 24rem;

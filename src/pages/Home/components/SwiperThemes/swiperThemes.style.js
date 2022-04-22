@@ -4,11 +4,8 @@ import { theme } from "../../../../styles/theme";
 export const Container = styled.section`
   margin-top: 4.75rem;
   margin-bottom: 5.312rem;
-
-  @media (min-width: 767px) {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+  max-width: 1440px;
+  margin: 0 auto;
 
   @media (min-width: 1023px) {
     margin-bottom: 10.937rem;
