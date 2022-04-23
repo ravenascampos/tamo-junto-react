@@ -74,38 +74,6 @@ $ yarn start
 
 ```
 
-## :muscle: Contribuir
-
-Faça o `fork` e clone o projeto a partir do seu usuário.
-
-```bash
-# Clonando projeto
-$ git clone https://github.com/SEU-NOME-DE-USUARIO/tamo-junto-react.git
-
-# Criando um branch
-$ git branch minha-alteracao
-
-# Acessando o novo branch
-$ git checkout -b minha-alteracao
-
-# Adicionando os arquivos alterados
-$ git add .
-
-# Criando commit e a mensagem
-$ git commit -m "Corrigindo...."
-
-# Enviando alterações para o brach
-$ git push origin minha-alteracao
-```
-
-Você deve navegar até o seu repositório onde fez o fork e clicar no botão _New pull request_ no lado esquerdo da página.
-
-## 📝 Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
-
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Getting Started with Create React App
