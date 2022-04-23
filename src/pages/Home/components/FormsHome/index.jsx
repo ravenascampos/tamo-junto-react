@@ -1,4 +1,5 @@
 import React from "react";
+import InputMask from "react-input-mask";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -45,7 +46,9 @@ export function FormsHome() {
         <Input id="email" type="email" {...register("email")} />
         <Error>{errors.email?.message}</Error>
         <div>
-          <Label htmlFor="phone">Telefone</Label>
+          <Label htmlFor="phone" mask="(99) 9 9999-9999">
+            Telefone
+          </Label>
           <span>Opcional</span>
         </div>
         <Input id="phone" type="text" {...register("phone")} />
