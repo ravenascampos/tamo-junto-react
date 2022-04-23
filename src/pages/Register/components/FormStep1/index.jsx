@@ -57,20 +57,41 @@ export function FormStep1({ activeStep, steps, handleNext }) {
     <>
       <Form>
         <Label htmlFor="name">Nome completo</Label>
-        <Input id="name" type="text" {...register("name")} />
+        <Input
+          placeholder="Insira seu nome e sobrenome"
+          id="name"
+          type="text"
+          {...register("name")}
+        />
         <Error>{errors.name?.message}</Error>
         <Label htmlFor="phone">Telefone</Label>
-        <Input id="phone" type="text" {...register("phone")} />
+        <Input
+          placeholder="(00) 0000-0000"
+          id="phone"
+          type="text"
+          {...register("phone")}
+        />
         <Error>{errors.phone?.message}</Error>
 
         <Label htmlFor="email">Email</Label>
-        <Input id="email" type="email" {...register("email")} />
+        <Input
+          placeholder="email@email.com.br"
+          id="email"
+          type="email"
+          {...register("email")}
+        />
         <Error>{errors.email?.message}</Error>
         <Label htmlFor="password">Defina sua senha</Label>
-        <Input type="password" id="password" {...register("password")} />
+        <Input
+          placeholder="Defina a senha com letras e números"
+          type="password"
+          id="password"
+          {...register("password")}
+        />
         <Error>{errors.password?.message}</Error>
         <Label htmlFor="passwordConfirmation">Confirme sua senha</Label>
         <Input
+          placeholder="Repita a senha definida acima"
           type="password"
           id="passwordConfirmation"
           {...register("passwordConfirmation")}

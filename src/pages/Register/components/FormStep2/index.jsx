@@ -64,14 +64,28 @@ export function FormStep2({ activeStep, steps, handleNext }) {
     <>
       <Form>
         <Label htmlFor="company">Nome fantasia</Label>
-        <Input id="company" type="text" {...register("company")} />
+        <Input
+          placeholder="Nome que seus clientes conhecem"
+          id="company"
+          type="text"
+          {...register("company")}
+        />
         <Error>{errors.company?.message}</Error>
         <Label htmlFor="cnpj">CNJP</Label>
-        <Input id="cnpj" type="text" {...register("cnpj")} />
+        <Input
+          placeholder="00.000.000/0000-00"
+          id="cnpj"
+          type="text"
+          {...register("cnpj")}
+        />
         <Error>{errors.cnpj?.message}</Error>
         <Label htmlFor="business">Ramo de atuação</Label>
-        <Select name="business" id="business" required>
-          <Option selected>Selecione um ramo de atuação</Option>
+        <Select
+          placeholder="Selecione seu ramo de atuação"
+          name="business"
+          id="business"
+          required
+        >
           {businessList.map((buss) => {
             return <Option key={buss.value}>{buss.label}</Option>;
           })}

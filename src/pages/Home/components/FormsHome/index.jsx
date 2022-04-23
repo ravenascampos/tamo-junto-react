@@ -40,21 +40,40 @@ export function FormsHome() {
     <>
       <Form>
         <Label htmlFor="name">Nome</Label>
-        <Input id="name" type="text" {...register("name")} />
+        <Input
+          placeholder="Informe seu nome completo"
+          id="name"
+          type="text"
+          {...register("name")}
+        />
         <Error>{errors.name?.message}</Error>
         <Label htmlFor="email">Email</Label>
-        <Input id="email" type="email" {...register("email")} />
+        <Input
+          placeholder="email@email.com.br"
+          id="email"
+          type="email"
+          {...register("email")}
+        />
         <Error>{errors.email?.message}</Error>
         <div>
-          <Label htmlFor="phone" mask="(99) 9 9999-9999">
-            Telefone
-          </Label>
+          <Label htmlFor="phone">Telefone</Label>
           <span>Opcional</span>
         </div>
-        <Input id="phone" type="text" {...register("phone")} />
+        <Input
+          id="phone"
+          mask="(99) 9999-9999"
+          type="text"
+          {...register("phone")}
+          placeholder="(00) 0000-0000"
+        />
         <Error>{errors.phone?.message}</Error>
         <Label htmlFor="message">Mensagem</Label>
-        <Textarea id="message" type="text" {...register("message")} />
+        <Textarea
+          placeholder="Insira sua mensagem aqui"
+          id="message"
+          type="text"
+          {...register("message")}
+        />
         <Error>{errors.message?.message}</Error>
         <Button type="submit" onClick={handleSubmit(onSubmit)}>
           ENVIAR

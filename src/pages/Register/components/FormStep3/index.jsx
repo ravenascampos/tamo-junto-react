@@ -68,33 +68,52 @@ export function FormStep3({ handleNext, activeStep, steps }) {
     <>
       <Form>
         <Label>CEP</Label>
-        <InputCep type="text" {...register("cep")} onBlur={checkCEP} />
+        <InputCep
+          placeholder="0000-00"
+          type="text"
+          {...register("cep")}
+          onBlur={checkCEP}
+        />
         <Error>{errors.cep?.message}</Error>
 
         <Label>Endereço</Label>
-        <Input type="text" {...register("address")} />
+        <Input
+          placeholder="Insira seu endereço"
+          type="text"
+          {...register("address")}
+        />
         <Error>{errors.address?.message}</Error>
         <Grid>
           <Wrapper>
             <Label>Número</Label>
-            <Input type="text" {...register("number")} />
+            <Input placeholder="XXXX" type="text" {...register("number")} />
             <Error>{errors.number?.message}</Error>
           </Wrapper>
           <Wrapper>
             <Label>
               Complemento <span>Opcional</span>
             </Label>
-            <Input />
+            <Input placeholder="Ap XX" />
           </Wrapper>
         </Grid>
         <Grid>
           <Wrapper>
             <Label>Estado</Label>
-            <Input type="text" {...register("uf")} disabled />
+            <Input
+              placeholder="Estado"
+              type="text"
+              {...register("uf")}
+              disabled
+            />
           </Wrapper>
           <Wrapper>
             <Label>Municipio</Label>
-            <Input type="text" {...register("city")} disabled />
+            <Input
+              placeholder="Município"
+              type="text"
+              {...register("city")}
+              disabled
+            />
           </Wrapper>
         </Grid>
 
