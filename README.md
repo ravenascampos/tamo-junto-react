@@ -1,3 +1,113 @@
+<p align="center">
+  <img alt="logo" src="https://github.com/ravenascampos/tamo-junto-react/blob/master/src/assets/images/LOGO%20(5).png?raw=true"  />
+</p>
+
+
+## 💻 Projeto
+
+Projeto desenvolvido como desafio do ioasys Camp 2022. 
+
+Tamojunto é uma comunidade no estilo de  fórum, com objetivo de trocar experiências, discutir inovação, fazer benchmarking, promover parcerias e meetups. É um ponto de encontro digital, com o objetivo de fomentar o ecossistema de inovação do setor de food service.
+
+A aplicação é uma página institucional que tem como finalidade apresentar o aplicativo tamojunto.
+
+### Protótipo do projeto
+
+O protótipo do projeto foi hospedado na Vercel
+Confira [aqui](https://tamojunto.vercel.app/)
+
+### Funcionalidades
+
+- [x] **HomePage**: Página de apresentação da ideia e do aplicativo.
+- [x] **Cadastro em três etapas**: Possibilita a criação de novo usuários.
+- [x] **Termo de uso e privacidade**: Tela que traz as políticas de privacidade e termos de uso.
+- [x] **Contato**: Apresenta informações de contato dos integrantes da equipe responsável pela idealização e implementação do projeto.
+- [x] **ioasys Camp**: Redireciona o usuário para a página oficial do Camp 2022. 
+- [x] **404**: Apresenta tela de erro e redireciona o usuário para a página principal.
+- [x] **Responsividade**: Modelo desenvolvido seguindo o Mobile First que se adapta a telas de diversos tamanhos e dispositivos.
+- [x] **Menu suspenso**: Permite navegação rápida por toda a página principal.
+- [x] **Faq**: Accordion que responde as principais dúvidas sobre o projeto.
+- [x] **Carousel**: Carouseis responsivos que se adaptam aos diversos tamanhos de tela.   
+
+### Em desenvolvimento
+
+- Integração com o back-end.
+- Modal de confirmação de criação do cadastro.
+
+### Conceitos abordados
+
+- Uso de css-in-js com [styled-components](https://www.styled-components.com/)
+- Responsividade
+- Sistema de rotas com [React Router](https://reactrouter.com/)
+- Consumo da api de endereços em [ViaCep](https://viacep.com.br/).
+
+## :rocket: Tecnologias
+
+- [React](https://pt-br.reactjs.org/)
+- [React-Icons](https://react-icons.netlify.com/)
+- [React Router](https://reactrouter.com/)
+- [Styled-components](https://www.styled-components.com/)
+- [Create React App](https://github.com/facebook/create-react-app)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Mui](https://mui.com/pt/)
+- [React Hook Form](https://react-hook-form.com/form-builder)
+- [Polished](https://polished.js.org/)
+- [React Responsive](https://www.npmjs.com/package/react-responsive)
+- [Swiper](https://swiperjs.com/)
+- [Yup](https://www.npmjs.com/package/yup)
+
+
+## 📥 Instalação e execução
+
+Faça um clone desse repositório e acesse o diretório.
+
+```bash
+$ git clone https://github.com/ravenascampos/tamo-junto-react.git && cd tamo-junto-react
+```
+
+```bash
+# Instalando as dependências
+$ yarn
+
+# Executanto aplicação
+$ yarn start
+
+```
+
+## :muscle: Contribuir
+
+Faça o `fork` e clone o projeto a partir do seu usuário.
+
+```bash
+# Clonando projeto
+$ git clone https://github.com/SEU-NOME-DE-USUARIO/tamo-junto-react.git
+
+# Criando um branch
+$ git branch minha-alteracao
+
+# Acessando o novo branch
+$ git checkout -b minha-alteracao
+
+# Adicionando os arquivos alterados
+$ git add .
+
+# Criando commit e a mensagem
+$ git commit -m "Corrigindo...."
+
+# Enviando alterações para o brach
+$ git push origin minha-alteracao
+```
+
+Você deve navegar até o seu repositório onde fez o fork e clicar no botão _New pull request_ no lado esquerdo da página.
+
+## 📝 Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
